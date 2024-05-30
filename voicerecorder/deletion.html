@@ -5,19 +5,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4; /* 添加背景色 */
         }
 
         .container {
             max-width: 800px;
-            width: 100%;
-            padding: 0 20px;
+            width: 90%; /* 使用相对单位 */
+            margin: 0 auto; /* 居中容器 */
+            padding: 20px; /* 增加内边距 */
             box-sizing: border-box;
         }
 
@@ -28,12 +25,12 @@
         .icon-h1::before {
             content: "";
             display: inline-block;
-            width: 48px; /* 图标宽度 */
-            height: 48px; /* 图标高度 */
+            width: 2em; /* 使用相对单位 */
+            height: 2em; /* 使用相对单位 */
             background-image: url('https://play-lh.googleusercontent.com/9YgngxXe9tpPl3QAJNU51ORHtArHOIBbYUcwZUz0TbT898R1x33oHYIkgkK54e3AQcs=w240-h480-rw'); /* 替换为你的图标URL */
             background-size: contain;
             background-repeat: no-repeat;
-            margin-right: 10px; /* 图标和文字之间的间距 */
+            margin-right: 0.5em; /* 使用相对单位 */
             vertical-align: middle; /* 确保图标和文字垂直居中 */
         }
 
@@ -44,16 +41,28 @@
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 1em; /* 使用相对单位 */
         }
 
+        /* 移动优先，为小屏幕设备调整样式 */
         @media (max-width: 600px) {
+            .container {
+                width: 100%; /* 全宽布局 */
+                padding: 10px; /* 减少内边距 */
+            }
+
             h1, h2 {
-                font-size: 18px;
+                font-size: 1.2em; /* 使用相对单位 */
             }
 
             p, li {
-                font-size: 16px;
+                font-size: 1em; /* 使用相对单位 */
+            }
+
+            .icon-h1::before {
+                width: 1.5em; /* 使用相对单位 */
+                height: 1.5em; /* 使用相对单位 */
+                margin-right: 0.5em; /* 使用相对单位 */
             }
         }
     </style>
