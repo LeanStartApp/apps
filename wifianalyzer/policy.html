@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - WiFi Analyzer+</title>
+<style type="text/css">
+body{background-color:#ffffff;color:#000000;max-width:451.4pt;margin:0 auto;padding:36pt 18pt;font-family:"Times New Roman",serif;font-size:12pt;line-height:1.35}
+h1{font-family:"Arial",sans-serif;font-size:18pt;font-weight:400;text-align:center;margin:0 0 4pt}
+h2{font-family:"Arial",sans-serif;font-size:12pt;font-weight:700;margin:18pt 0 4pt}
+p,ul{margin:0 0 8pt}
+.c-date{text-align:center;font-style:italic;margin-bottom:16pt}
+code{font-family:"Courier New",monospace;font-size:11pt}
+</style>
+</head>
+<body>
+<h1>WiFi Analyzer+ Privacy Policy</h1>
+<p class="c-date">Effective date: October 1, 2026</p>
+
+<section id="controller">
+<h2>1. Who we are</h2>
+<p>WiFi Analyzer+ (package name <code>wifianalyzer.plus</code>) is published on Google Play by the developer Lean StartApp ("we", "us"). We are the controller of the personal data described in this policy. You can reach us at gosomatu@gmail.com (see Contact).</p>
+</section>
+
+<section id="summary">
+<h2>2. Summary</h2>
+<ul>
+<li>The app reads Wi-Fi information on your device and shows it to you. Scan results, network names and the network list stay on your device.</li>
+<li>We run no server of our own. Data leaves your device only through the Google services listed below: ads, the consent form, analytics, crash reports, remote ad settings and Google Play purchases.</li>
+<li>The app does not ask for any permission at first launch. It asks for location permission only when you open the network list or want to see a network name.</li>
+</ul>
+</section>
+
+<section id="location-permission">
+<h2>3. Location permission</h2>
+<p>The app declares <code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code>. Android requires location permission before any app can list nearby Wi-Fi networks and read their names; without it, the system returns an empty list. We use this permission only for that.</p>
+<p>The app does not use it to find your coordinates or to work out where you are. Scan results (network names, BSSIDs, signal strength, channel, channel width, security type) are shown on your device and are not sent to us or to anyone else.</p>
+<p>The app asks for this permission only when you open the network list or want to see a network name, never at first launch. You can revoke it at any time in Android settings; the features that do not need it keep working.</p>
+</section>
+
+<section id="nearby-permission">
+<h2>4. Nearby devices permission</h2>
+<p>On Android 14 and later the app uses <code>NEARBY_WIFI_DEVICES</code> to read how many Wi-Fi networks are on each channel. The channel occupancy chart and the channel suggestion are based on these counts. This permission belongs to the Nearby devices group, not to the location group, and the app declares it with the <code>neverForLocation</code> flag, which tells Android that the app does not derive your physical location from it. The app asks for it only when you choose to see channel occupancy.</p>
+</section>
+
+<section id="wifi-state">
+<h2>5. Wi-Fi and network state</h2>
+<p><code>ACCESS_WIFI_STATE</code>, <code>CHANGE_WIFI_STATE</code> and <code>ACCESS_NETWORK_STATE</code> let the app read whether Wi-Fi is on, read your current connection (signal strength, frequency, channel, link speed, Wi-Fi standard, security type, IP address, gateway, DNS) and ask Android to start a Wi-Fi scan. These values are shown on screen and are not sent anywhere.</p>
+</section>
+
+<section id="internet">
+<h2>6. Internet access</h2>
+<p>The app's Wi-Fi features work offline. <code>INTERNET</code> is used by the Google services described below: ads, the consent form, analytics, crash reports, remote ad settings and Google Play purchases.</p>
+</section>
+
+<section id="approximate-location">
+<h2>7. Approximate location</h2>
+<p>The app itself does not determine, store or use your approximate location. The advertising SDK and the analytics SDK receive your device's IP address as part of their network requests (see Ads and Analytics).</p>
+</section>
+
+<section id="identifiers">
+<h2>8. Identifiers</h2>
+<p>The Google Mobile Ads SDK adds the <code>AD_ID</code> permission and the Android Privacy Sandbox permissions <code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code> and <code>ACCESS_ADSERVICES_TOPICS</code>. With them the SDK can read your device's advertising ID and app set ID and use the Privacy Sandbox APIs for ad selection and measurement. Firebase uses an app-instance ID (Analytics), a Firebase installation ID and a Crashlytics installation UUID. None of these identifiers contain your name, phone number or email address. You can reset or delete your advertising ID in Android settings.</p>
+</section>
+
+<section id="ads">
+<h2>9. Ads (Google AdMob)</h2>
+<p>The free version shows banner ads and app open ads; it shows no interstitial ads. Google AdMob collects your device's IP address, your advertising ID and other device identifiers, your interactions with ads (such as app launches, taps and video views) and diagnostic information, and shares this data with Google for advertising, analytics and fraud prevention. Google describes its use of this data at https://policies.google.com/technologies/partner-sites. If you buy Remove ads, the app stops requesting ads.</p>
+</section>
+
+<section id="consent">
+<h2>10. Consent</h2>
+<p>If you are in a region where Google's consent requirements apply (such as the EEA and the UK), the app shows Google's consent form (User Messaging Platform) before the ads SDK starts, and you can choose to consent or not to consent. Not consenting does not block any feature of the app. In those regions you can change your choice at any time in the app under Settings &gt; Ad privacy options. The consent form is loaded from Google, and your choice is stored on your device.</p>
+</section>
+
+<section id="analytics">
+<h2>11. Analytics (Google Analytics for Firebase)</h2>
+<p>The app records usage events: screens and sessions, whether a permission prompt was answered, when a channel suggestion was shown, when the network list was exported (as a row-count range), when a network name was saved, when Ad privacy options were opened, and purchase events, which include the product ID, product name and price. Analytics also uses the app-instance ID and the advertising ID and receives your device's IP address. Events never include network names, BSSIDs or scan results. In regions where consent is required, analytics collection starts only after you consent through the consent form.</p>
+</section>
+
+<section id="crash-reports">
+<h2>12. Crash reports (Firebase Crashlytics)</h2>
+<p>If the app crashes, Crashlytics sends the stack trace, the relevant app state at the time of the crash, device information (such as model and OS version) and a Crashlytics installation UUID, together with two app values: which screen was open and which permission level was active. Crash reports are not tied to the consent form, because we need them to keep the app working (legitimate interest, see Legal basis).</p>
+</section>
+
+<section id="diagnostics">
+<h2>13. Diagnostics</h2>
+<p>The Google Mobile Ads SDK sends information about app and SDK performance, such as app launch time. Firebase sends app and device information (package name, OS version, SDK version, network connection type, device manufacturer and model) and the time a session started. Firebase Remote Config, which lets us adjust ad settings without an app update, receives the country code, language code, time zone, OS version, package name and the Firebase installation ID so that settings can be targeted.</p>
+</section>
+
+<section id="purchases">
+<h2>14. Purchases</h2>
+<p>Remove ads is a one-time purchase processed by Google Play. We never see your payment card details. The app receives the purchase status for this product from Google Play (via <code>com.android.vending.BILLING</code>), checks its signature on your device and keeps the result on your device. Google Analytics for Firebase records purchase events as described in Analytics.</p>
+</section>
+
+<section id="install-referrer">
+<h2>15. Install referrer</h2>
+<p><code>BIND_GET_INSTALL_REFERRER_SERVICE</code> lets Google Analytics for Firebase read the Google Play Install Referrer, that is, which store page or campaign led to the install. It is used only to attribute installs in analytics.</p>
+</section>
+
+<section id="background-work">
+<h2>16. Background work</h2>
+<p><code>WAKE_LOCK</code> and <code>FOREGROUND_SERVICE</code> are added by Google and AndroidX libraries so that they can schedule their own uploads. The app does not scan for Wi-Fi networks in the background and does not run a foreground service of its own.</p>
+</section>
+
+<section id="system-internal">
+<h2>17. System permission used internally</h2>
+<p><code>wifianalyzer.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> is created by the AndroidX library to protect the app's own internal messages from other apps. It gives access to no data.</p>
+</section>
+
+<section id="local-data">
+<h2>18. Data stored on your device</h2>
+<p>Names you give to access points are stored only on your device and are not included in backups. The app also keeps a few settings and the purchase status on your device. A network list export is created only when you tap Share, and it goes only to the app you choose in the Android share sheet. Clearing the app's data or uninstalling the app deletes all of this.</p>
+</section>
+
+<section id="retention">
+<h2>19. Retention</h2>
+<p>Google Analytics event data is kept for 14 months. Crashlytics crash reports are kept for 90 days. Data collected by Google AdMob is kept according to Google's policies. Data on your device is kept until you clear the app's data or uninstall the app.</p>
+</section>
+
+<section id="legal-basis">
+<h2>20. Legal basis</h2>
+<p>For users in the EEA and the UK: personalized ads and analytics are based on your consent (GDPR Art. 6(1)(a)); crash reports, security and fraud prevention are based on our legitimate interest in a working and secure app (Art. 6(1)(f)); processing a purchase is necessary to provide what you bought (Art. 6(1)(b)). Providing data is not required by law or contract, but without an internet connection ads, analytics, crash reports and purchases do not work. We do not use automated decision-making that has legal or similarly significant effects on you.</p>
+</section>
+
+<section id="transfers">
+<h2>21. Recipients and international transfers</h2>
+<p>The recipients of the data described above are Google LLC and its affiliates (Google AdMob, Google Analytics for Firebase, Firebase Crashlytics, Firebase Remote Config, Google Play). Data may be processed in the United States. These transfers rely on the EU-US Data Privacy Framework and on the European Commission's standard contractual clauses.</p>
+</section>
+
+<section id="rights">
+<h2>22. Your rights</h2>
+<p>You have the right to access, rectify and erase your personal data, to restrict or object to its processing, and to data portability. Where processing is based on consent, you can withdraw consent at any time (Settings &gt; Ad privacy options) without affecting earlier processing. You also have the right to lodge a complaint with a data protection supervisory authority. To exercise your rights, contact us; because we run no server of our own, we will pass your request to Google where the data is held by Google.</p>
+</section>
+
+<section id="children">
+<h2>23. Children</h2>
+<p>The app is not directed to children under 13, and we do not knowingly collect personal data from children under 13.</p>
+</section>
+
+<section id="security">
+<h2>24. Security</h2>
+<p>The Google SDKs in the app send data over encrypted connections (TLS). The app has no server of its own, scan results stay on your device, and purchase results are verified on your device.</p>
+</section>
+
+<section id="changes">
+<h2>25. Changes to this policy</h2>
+<p>We may update this policy. The effective date at the top shows when it was last changed.</p>
+</section>
+
+<section id="contact">
+<h2>26. Contact information</h2>
+<p>If you have any questions or opinions regarding this Privacy Policy, you may contact us at: gosomatu@gmail.com.</p>
+</section>
+</body>
+</html>
