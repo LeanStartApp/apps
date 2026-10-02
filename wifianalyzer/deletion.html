@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Delete Your Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* 添加背景色 */
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%; /* 使用相对单位 */
+            margin: 0 auto; /* 居中容器 */
+            padding: 20px; /* 增加内边距 */
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .icon-h1::before {
+            content: "";
+            display: inline-block;
+            width: 2em; /* 使用相对单位 */
+            height: 2em; /* 使用相对单位 */
+            background-image: url('data:image/png;base64,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');
+            /* WiFi Analyzer+ C 版 launcher 图标（app/src/main/res/mipmap-xxxhdpi/ic_launcher.png，192x192），
+               2026-10-03 原字节内联为 data URI，未重采样：不依赖 Play 图床（那个 URL 要 app 上架后才存在），
+               也不需要额外部署一个 icon 文件——这一页自带全部资源，单文件即可发布。 */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.5em; /* 使用相对单位 */
+            vertical-align: middle; /* 确保图标和文字垂直居中 */
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 1em; /* 使用相对单位 */
+        }
+
+        /* 移动优先，为小屏幕设备调整样式 */
+        @media (max-width: 600px) {
+            .container {
+                width: 100%; /* 全宽布局 */
+                padding: 10px; /* 减少内边距 */
+            }
+
+            h1, h2 {
+                font-size: 1.2em; /* 使用相对单位 */
+            }
+
+            p, li {
+                font-size: 1em; /* 使用相对单位 */
+            }
+
+            .icon-h1::before {
+                width: 1.5em; /* 使用相对单位 */
+                height: 1.5em; /* 使用相对单位 */
+                margin-right: 0.5em; /* 使用相对单位 */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1><span class="icon-h1"></span><span>WiFi Analyzer+</span></h1>
+    <h1>How to Delete Your Data</h1>
+    <p>If you wish to delete your data, you can do so by following the steps below:</p>
+    <h2>Automated Method</h2>
+    <p>Click the link below to send an automated data deletion request:</p>
+    <p><a href="mailto:gosomatu@gmail.com?subject=Data%20deletion%20request%20-%20WiFi%20Analyzer%2B">Send Data Deletion Request</a></p>
+    <h2>Manual Method</h2>
+    <p>Follow these steps to delete your data manually:</p>
+    <ul>
+        <li>Step 1: Log in to your email.</li>
+        <li>Step 2: Create a new mail with recipient "gosomatu@gmail.com".</li>
+        <li>Step 3: Set email title to "Data deletion request - WiFi Analyzer+".</li>
+        <li>Step 4: Send the email. We will confirm once the request has been processed.</li>
+    </ul>
+</div>
+</body>
+</html>
